@@ -1,6 +1,5 @@
 package game;
 
-import city.cs.engine.UserView;
 
 import javax.swing.*;
 
@@ -9,7 +8,7 @@ public class Game {
     public Game() {
         GameWorld world = new GameWorld();
 
-        UserView view = new UserView(world, 500, 500);
+        GameView view = new GameView(world, 1200, 750);
 
         JFrame frame = new JFrame("City Game");
         frame.add(view);
